@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>About</title>
+    <link rel="icon" href="./IMAGES/company Img/I logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googln.csseapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container" >
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./IMAGES/company Img/LOGO.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Product.html">Products</a></li>
+                    <li style="background-color:rgb(50, 192, 248);"><a href="./About.html">About</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="./Kart.html"><img src="./images/company Img/cart.jpg" height="30px" width="30px"></a>
+            <img src="./IMAGES/company Img/menu.jpg" class="menu-icon" onclick="menutoggle()" height="30px" width="30px">
+        </div>
+    </div>
+
+    <!-- ------Single Product Details------ -->
+
+    <div class="about" style="margin-top:-90px;" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-2">
+                    <img src="./IMAGES/company Img/About-img.png" alt="">
+
+                </div>
+                <div class="col-2" style=" box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);padding:15px;text-align: center;">
+                    <H1>This Is All About Us</H1>
+                    <p>Since 2022 We Are Entered In This Platform</p>
+                    <p>Thank You For Your Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pd" style="padding:100px;margin-top:-50px;background-color:black;">
+    <div class="cantainer" style="border-radius: 35px">
+    
+        <div class="ab" style="padding: 50px;margin-top:-50px;">
+            <div class="row">
+                <h1 style="color:gray;">Hi, We Are ITech</h1>
+                
+            </div>
+            <div class="row">
+                <p style="font-size: 20px;font-weight:normal;margin-top: 15px;">ITech began with a simple vision where innovative technology can be combined with<br> &nbsp; inspirational
+                    design to help people parchase smart-device easily and trustworthy.</p>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col">
+                    <img src="./images/company Img/About-img 1.png" width="100%" height="100%" style="border-radius:50px;">
+                </div>
+                
+            </div>
+    
+        </div>
+
+    </div>
+</div>
+    
+    
+
+    <!----------Footer--------->
+    <div class="margin" style="margin-top: 50px;">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="footer-col-1">
+                        <h3>Download Our App </h3>
+                        <p>Download App for Android and ios mobile Phone.</p>
+                        <div class="app-logo">
+                            <img src="./IMAGES/company logo/Playstore.jpg">
+                            <img src="./IMAGES/company logo/appstore.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./IMAGES/company Img/I logo.png">
+                        <p>Our Purpose Is To Suatainably Make the Pleasure and
+                            Benefits of Education Accessible to the Many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="Copyright">Copyright 2022 - Het Rojivadiya | All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--------js for menu toggle------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "50px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- ----js for product gallary---- -->
+
+    <script>
+        var ProductImg = document.getElementById("productImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+</body>
+
+</html>

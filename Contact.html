@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>Contact</title>
+    <link rel="icon" href="./IMAGES/company Img/I logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googln.csseapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+        
+        /* Style inputs */
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+          
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+          font-size: medium;  
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        /* Style the container/contact section */
+        .container1 {
+          border-radius: 25px;
+          background-color: #f2f2f2;
+          padding: 10px;
+        }
+        
+        /* Create two columns that float next to eachother */
+        .column1 {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row1:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column1, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./IMAGES/company Img/LOGO.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Product.html">Products</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li style="background-color:rgb(50, 192, 248)"><a href="./Contact.html">Contact</a></li>
+                    <li><a href="./Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="./Kart.html"><img src="./images/company Img/cart.jpg" height="30px" width="30px"></a>
+            <img src="./IMAGES/company Img/menu.jpg" class="menu-icon" onclick="menutoggle()" height="30px" width="30px">
+        </div>
+    </div>
+
+    <!-- ------Single Product Details------ -->
+
+    <div class="padding" style="padding: 35px;">
+    <div class="container1">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          
+        </div>
+        <div class="row1">
+          <div class="column1">
+            <img src="./IMAGES/company Img/Contact-img.png" style="height:80%;width:90%;">
+          </div>
+          <div class="column1">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="india"> India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+    <!----------Footer--------->
+    <div class="margin" style="margin-top: 50px;">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="footer-col-1">
+                    <h3>Download Our App </h3>
+                    <p>Download App for Android and ios mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="./IMAGES/company logo/Playstore.jpg">
+                        <img src="./IMAGES/company logo/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./IMAGES/company Img/I logo.png">
+                    <p>Our Purpose Is To Suatainably Make the Pleasure and
+                        Benefits of Education Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2022 - Het Rojivadiya | All rights reserved.</p>
+        </div>
+    </div>
+    </div>
+
+    <!--------js for menu toggle------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "50px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!-- ----js for product gallary---- -->
+
+    <script>
+        var ProductImg = document.getElementById("productImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+</body>
+
+</html>
